@@ -8,10 +8,15 @@
     "react-dom": "17.0.1",
     "react-helmet-async": "1.0.7",
     "react-router-dom": "5.2.0",
-    "react-scripts": "4.0.1",
-    "web-vitals": "1.0.1"
+    "react-scripts": "4.0.1"
   },
   "devDependencies": {
+    "tailwindcss": "^2.0.2",
+    "npm-run-all": "^4.1.5",
+    "onchange": "^7.1.0",
+    "postcss": "^8.2.1",
+    "postcss-cli": "^8.3.1",
+    "postcss-nested": "^5.0.3",
     "@testing-library/jest-dom": "5.11.6",
     "@testing-library/react": "11.2.2",
     "@types/jest": "26.0.19",
@@ -22,7 +27,7 @@
     "@types/react-test-renderer": "17.0.0",
     "@types/testing-library__jest-dom": "5.9.5",
     "cross-env": "7.0.3",
-    "eslint-config-prettier": "7.0.0",
+    "eslint-config-prettier": "7.1.0",
     "eslint-plugin-prettier": "3.3.0",
     "eslint-plugin-react-hooks": "4.2.0",
     "husky": "4.3.6",
@@ -34,8 +39,12 @@
     "typescript": "4.1.3"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
+    "__comment1__start__": "start-script",
+    "start": "npm-run-all start:tw -l -p start:p:*",
+    "start:tw": "postcss ./src/assets/css/tailwind.src.css -o ./src/assets/css/tailwind.css",
+    "start:p:w-tw": "onchange 'tailwind.config.js' 'src/**/*.css' -e './src/assets/css/tailwind.css' -- npm run start:tw",
+    "start:p:react": "react-scripts start",
+    "__comment1__end__": "start-script",
     "test": "react-scripts test a",
     "eject": "react-scripts eject",
     "start:prod": "npm run build && serve -s build",
@@ -43,7 +52,13 @@
     "eslint": "eslint --ext js,ts,tsx",
     "lint": "npm run eslint src",
     "lint:fix": "npm run eslint --fix src",
-    "prettify": "prettier --write"
+    "prettify": "prettier --write",
+    "__comment2__start__": "build-script",
+    "build": "run-s build:** -l",
+    "build:a:tw": "cross-env NODE_ENV=production npm run start:tw",
+    "build:b:react": "react-scripts build",
+    "build:c:lint": "npm run format-and-lint",
+    "__comment2__end__": "build-script"
   },
   "browserslist": {
     "production": [

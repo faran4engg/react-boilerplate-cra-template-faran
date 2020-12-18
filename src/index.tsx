@@ -4,6 +4,8 @@ import 'react-app-polyfill/stable';
 import React from 'react';
 import ReactDOM from 'react-dom';
 
+import 'assets/css/tailwind.css';
+
 import * as serviceWorker from 'serviceWorker';
 
 // Import root app

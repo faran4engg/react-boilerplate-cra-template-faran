@@ -13,7 +13,7 @@ export function App() {
       >
         <meta name="description" content="A React Boilerplate application" />
       </Helmet>
-
+      <p className="text-4xl text-purple-500">lol</p>
       <Switch>
         <Route exact path="/" component={HomePage} />
         {/* <Route component={NotFoundPage} /> */}
