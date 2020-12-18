@@ -85,6 +85,12 @@
     "coveragePathIgnorePatterns": [
       "!src/*.d.ts"
     ],
+    "coverageReporters": [
+      "json",
+      "lcov",
+      "text",
+      "text-summary"
+    ],
     "coverageThreshold": {
       "global": {
         "branches": 90,
