@@ -8,7 +8,7 @@ exports[`<App /> should render and match the snapshot 1`] = `
     encodeSpecialCharacters={true}
     htmlAttributes={
       Object {
-        "lang": undefined,
+        "lang": "en",
       }
     }
     titleTemplate="%s - React Boilerplate"
@@ -28,6 +28,6 @@ exports[`<App /> should render and match the snapshot 1`] = `
       component={[Function]}
     />
   </Switch>
-  <Memo(GlobalStyleComponent) />
+  <Memo(l) />
 </BrowserRouter>
 `;

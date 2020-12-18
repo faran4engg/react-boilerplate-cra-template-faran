@@ -1,4 +1,3 @@
-import { LolContainerState } from 'app/containers/LolContainer/types';
 // [IMPORT NEW CONTAINERSTATE ABOVE] < Needed for generating containers seamlessly
 
 /* 
@@ -6,6 +5,6 @@ import { LolContainerState } from 'app/containers/LolContainer/types';
   You have to declare them here manually
 */
 export interface RootState {
-  lolContainer?: LolContainerState;
+  state?: any;
   // [INSERT NEW REDUCER KEY ABOVE] < Needed for generating containers seamlessly
 }
