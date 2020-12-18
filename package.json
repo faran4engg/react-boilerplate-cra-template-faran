@@ -57,7 +57,6 @@
     "build": "run-s build:** -l",
     "build:a:tw": "cross-env NODE_ENV=production npm run start:tw",
     "build:b:react": "react-scripts build",
-    "build:c:lint": "npm run format-and-lint",
     "__comment2__end__": "build-script"
   },
   "browserslist": {
