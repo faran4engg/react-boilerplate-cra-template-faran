@@ -3,7 +3,7 @@ import { Switch, Route, BrowserRouter } from 'react-router-dom';
 
 import { HomePage } from './containers/HomePage/Loadable';
 
-export function App() {
+const App = () => {
   return (
     <BrowserRouter>
       <Helmet
@@ -20,4 +20,6 @@ export function App() {
       </Switch>
     </BrowserRouter>
   );
-}
+};
+
+export default App;

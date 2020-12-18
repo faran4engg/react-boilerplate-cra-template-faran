@@ -9,7 +9,7 @@ import 'assets/css/tailwind.css';
 import * as serviceWorker from 'serviceWorker';
 
 // Import root app
-import { App } from 'app';
+import App from 'app';
 
 import { HelmetProvider } from 'react-helmet-async';
 

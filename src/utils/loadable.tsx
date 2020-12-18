@@ -6,7 +6,9 @@ interface Opts {
 type Unpromisify<T> = T extends Promise<infer P> ? P : never;
 
 export const lazyLoad = <
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   T extends Promise<any>,
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   U extends React.ComponentType<any>
 >(
   importFunc: () => T,

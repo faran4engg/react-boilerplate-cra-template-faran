@@ -1,7 +1,7 @@
 import React from 'react';
 import { createRenderer } from 'react-test-renderer/shallow';
 
-import { HomePage } from '..';
+import HomePage from '..';
 
 const shallowRenderer = createRenderer();
 
