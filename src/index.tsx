@@ -11,9 +11,6 @@ import { App } from 'app';
 
 import { HelmetProvider } from 'react-helmet-async';
 
-// Initialize languages
-import './locales/i18n';
-
 const MOUNT_NODE = document.getElementById('root') as HTMLElement;
 
 ReactDOM.render(
