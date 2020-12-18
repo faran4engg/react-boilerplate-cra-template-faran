@@ -1,20 +1,20 @@
-import * as React from 'react';
+import React from 'react';
 import { render } from '@testing-library/react';
 import { lazyLoad } from 'utils/loadable';
 
 const LoadingIndicator = () => <div>Loading</div>;
 
 const LazyComponenWithDefaultExport = lazyLoad(
-  () => import('./__mocks__/loadable.mock'),
+  () => import('../__mocks__/loadable.mock'),
 );
 
 const LazyComponentWithExportedFunction = lazyLoad(
-  () => import('./__mocks__/loadable.mock'),
+  () => import('../__mocks__/loadable.mock'),
   module => module.ExportedFunc,
 );
 
 const LazyComponentWithFallback = lazyLoad(
-  () => import('./__mocks__/loadable.mock'),
+  () => import('../__mocks__/loadable.mock'),
   undefined,
   {
     fallback: <LoadingIndicator />,
