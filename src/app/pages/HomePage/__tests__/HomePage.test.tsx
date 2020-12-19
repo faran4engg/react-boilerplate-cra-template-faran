@@ -1,31 +1,31 @@
 import React from 'react';
-import { createRenderer } from 'react-test-renderer/shallow';
 
-import { createSafeRenderPropMock } from 'utils/test-utils';
-import TodosContainer from 'app/domains/Todos/containers';
-
+import { create } from 'react-test-renderer';
 import HomePage from '..';
 
-jest.mock('app/domains/Todos/containers', () => jest.fn());
+jest.mock('react-query', () => ({
+  useQuery: () => ({}),
+}));
 
 describe('<HomePage />', () => {
-  it('should render and match the snapshot', () => {
-    const renderer = createRenderer();
-    renderer.render(<HomePage />);
-    const renderedOutput = renderer.getRenderOutput();
-    expect(renderedOutput).toMatchSnapshot();
+  const renderProps = jest.fn();
+
+  const renderComponent = () =>
+    create(
+      <HomePage>
+        {renderPropParams => {
+          renderProps({ ...renderPropParams });
+          return <div />;
+        }}
+      </HomePage>,
+    );
+
+  afterEach(() => {
+    jest.clearAllMocks();
   });
 
   it('should render with render prop', () => {
-    const renderProp = {
-      isLoading: false,
-      todos: [],
-    };
-    createSafeRenderPropMock(TodosContainer, renderProp);
-
-    const renderer = createRenderer();
-    renderer.render(<HomePage />);
-    const renderedOutput = renderer.getRenderOutput();
-    expect(renderedOutput).toMatchSnapshot();
+    const component = renderComponent();
+    expect(component).toMatchSnapshot();
   });
 });
