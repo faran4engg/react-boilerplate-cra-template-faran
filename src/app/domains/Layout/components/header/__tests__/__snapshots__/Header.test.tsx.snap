@@ -2,7 +2,7 @@
 
 exports[`<Header /> should render and match the snapshot 1`] = `
 <header
-  className="z-40 py-2 lg:p-4 lg:shadow-sm shadow-sm shadow-bottom bg-white dark:bg-gray-800"
+  className="z-40 py-2 lg:p-4 lg:shadow-none shadow-md shadow-bottom bg-white dark:bg-gray-800"
 >
   <div
     className="container flex items-center justify-between h-full  px-6 mx-auto text-purple-600 dark:text-purple-300"
@@ -55,7 +55,7 @@ exports[`<Header /> should render and match the snapshot 1`] = `
 
 exports[`<Header /> toggleDark should set dark mode when clicked 1`] = `
 <header
-  className="z-40 py-2 lg:p-4 lg:shadow-sm shadow-sm shadow-bottom bg-white dark:bg-gray-800"
+  className="z-40 py-2 lg:p-4 lg:shadow-none shadow-md shadow-bottom bg-white dark:bg-gray-800"
 >
   <div
     className="container flex items-center justify-between h-full  px-6 mx-auto text-purple-600 dark:text-purple-300"
@@ -112,7 +112,7 @@ exports[`<Header /> toggleDark should set dark mode when clicked 1`] = `
 
 exports[`<Header /> toggleDark should set light mode when clicked 1`] = `
 <header
-  className="z-40 py-2 lg:p-4 lg:shadow-sm shadow-sm shadow-bottom bg-white dark:bg-gray-800"
+  className="z-40 py-2 lg:p-4 lg:shadow-none shadow-md shadow-bottom bg-white dark:bg-gray-800"
 >
   <div
     className="container flex items-center justify-between h-full  px-6 mx-auto text-purple-600 dark:text-purple-300"

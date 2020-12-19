@@ -18,7 +18,8 @@ exports[`<SidebarContent /> should render and match the snapshot 1`] = `
     >
       <NavLink
         activeClassName="text-purple-500 dark:text-purple-400"
-        className="inline-flex items-center w-full text-sm font-semibold transition-colors duration-150 hover:text-purple-400 dark:hover:text-purple-300"
+        className="inline-flex items-center w-full text-sm font-semibold transition-colors
+ duration-150 hover:text-purple-400 dark:hover:text-purple-300"
         exact={true}
         to="/home"
       >
@@ -47,7 +48,8 @@ exports[`<SidebarContent /> should render and match the snapshot 1`] = `
     >
       <NavLink
         activeClassName="text-purple-500 dark:text-purple-400"
-        className="inline-flex items-center w-full text-sm font-semibold transition-colors duration-150 hover:text-purple-400 dark:hover:text-purple-300"
+        className="inline-flex items-center w-full text-sm font-semibold transition-colors
+ duration-150 hover:text-purple-400 dark:hover:text-purple-300"
         exact={true}
         to="/chat"
       >

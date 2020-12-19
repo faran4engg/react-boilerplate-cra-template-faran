@@ -21,7 +21,7 @@ const Header: FC<HeaderProps> = ({ handleIsSidebarOpen }) => {
 
   return (
     <header
-      className="z-40 py-2 lg:p-4 lg:shadow-sm shadow-sm shadow-bottom
+      className="z-40 py-2 lg:p-4 lg:shadow-none shadow-md shadow-bottom
 		 bg-white dark:bg-gray-800"
     >
       <div
