@@ -1,21 +1,18 @@
-import { Helmet } from 'react-helmet-async';
-import { Switch, Route, BrowserRouter } from 'react-router-dom';
+import { Switch, Route, BrowserRouter as Router } from 'react-router-dom';
 
-import { HomePage } from 'app/containers/HomePage/Loadable';
+import { LayoutContainer } from 'app/domains/Layout/containers/async';
 
-const AppMain = () => {
-  return (
-    <BrowserRouter>
-      <Helmet defaultTitle="React Boilerplate" htmlAttributes={{ lang: 'en' }}>
-        <meta name="description" content="A React Boilerplate application" />
-      </Helmet>
-      <p className="text-4xl text-purple-500">lol</p>
-      <Switch>
-        <Route exact path="/" component={HomePage} />
-        {/* <Route component={NotFoundPage} /> */}
-      </Switch>
-    </BrowserRouter>
-  );
-};
+const AppMain = () => (
+  <Router>
+    <Switch>
+      {/* <Route path="/login" component={Login} />
+          <Route path="/create-account" component={CreateAccount} />
+				<Route path="/forgot-password" component={ForgotPassword} /> */}
+
+      <Route path="/" component={LayoutContainer} />
+      {/* <Redirect from="/" to="/app" /> */}
+    </Switch>
+  </Router>
+);
 
 export default AppMain;

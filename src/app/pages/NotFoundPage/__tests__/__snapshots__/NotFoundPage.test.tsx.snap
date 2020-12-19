@@ -1,0 +1,42 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<NotFoundPage /> should render and match the snapshot 1`] = `
+<React.Fragment>
+  <Helmet
+    defer={true}
+    encodeSpecialCharacters={true}
+  >
+    <title>
+      404 Not Found
+    </title>
+    <meta
+      content="not found page"
+      name="description"
+    />
+  </Helmet>
+  <div
+    className="flex flex-col items-center"
+  >
+    <ForwardRef(SvgForbidden)
+      aria-hidden="true"
+      className="w-12 h-12 mt-8 text-purple-600"
+    />
+    <h1
+      className="text-6xl font-semibold text-gray-700 dark:text-gray-200"
+    >
+      404
+    </h1>
+    <p
+      className="text-gray-700 dark:text-gray-300 my-4"
+    >
+      Page not found. Check the address or
+    </p>
+    <Link
+      className="animate-bounce text-purple-600 hover:underline dark:text-purple-300"
+      to="/"
+    >
+      Go to Home page
+    </Link>
+  </div>
+</React.Fragment>
+`;

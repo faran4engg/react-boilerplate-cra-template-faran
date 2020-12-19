@@ -5,8 +5,8 @@
   "dependencies": {
     "axios": "0.21.0",
     "react": "17.0.1",
-    "react-app-polyfill": "2.0.0",
     "react-dom": "17.0.1",
+    "react-app-polyfill": "2.0.0",
     "react-helmet-async": "1.0.7",
     "react-router-dom": "5.2.0",
     "react-scripts": "4.0.1"
@@ -100,7 +100,9 @@
     "coveragePathIgnorePatterns": [
       "<rootDir>/src/app/api",
       "<rootDir>/src/app/axios",
-      "!src/*.d.ts"
+      "<rootDir>/src/assets",
+      "<rootDir>/src/app/router",
+      "async.tsx"
     ],
     "coverageReporters": [
       "json",
