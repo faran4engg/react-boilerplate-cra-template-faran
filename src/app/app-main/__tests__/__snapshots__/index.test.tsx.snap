@@ -11,7 +11,6 @@ exports[`<App /> should render and match the snapshot 1`] = `
         "lang": "en",
       }
     }
-    titleTemplate="%s - React Boilerplate"
   >
     <meta
       content="A React Boilerplate application"
