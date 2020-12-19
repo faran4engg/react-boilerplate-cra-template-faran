@@ -48,7 +48,7 @@
     "test": "react-scripts test a",
     "eject": "react-scripts eject",
     "start:prod": "npm run build && serve -s build",
-    "checkTs": "tsc --noEmit",
+    "check:ts": "tsc --noEmit",
     "eslint": "eslint --ext js,ts,tsx",
     "lint": "npm run eslint src",
     "lint:fix": "npm run eslint --fix src",
@@ -85,7 +85,7 @@
   },
   "husky": {
     "hooks": {
-      "pre-commit": "npm run checkTs && lint-staged"
+      "pre-commit": "npm run check:ts && lint-staged"
     }
   },
   "jest": {
