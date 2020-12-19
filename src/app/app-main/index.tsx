@@ -1,6 +1,7 @@
 import { Switch, Route, BrowserRouter as Router } from 'react-router-dom';
 
 import { LayoutContainer } from 'app/domains/Layout/containers/async';
+import './index.css';
 
 const AppMain = () => (
   <Router>
