@@ -30,14 +30,11 @@ const Header: FC<HeaderProps> = ({ handleIsSidebarOpen }) => {
       >
         {/* <!-- Mobile hamburger --> */}
         <button
+          onClick={() => handleIsSidebarOpen(true)}
           className="p-1 mr-5 -ml-1 rounded-md lg:hidden focus:outline-none focus:shadow-outline-green-200"
           aria-label="Menu"
         >
-          <MenuIcon
-            onClick={() => handleIsSidebarOpen(true)}
-            className="w-6 h-6"
-            aria-hidden="true"
-          />
+          <MenuIcon className="w-6 h-6" aria-hidden="true" />
         </button>
         {/* <!-- Search input --> */}
         <div className="flex justify-center flex-1 lg:mr-32">

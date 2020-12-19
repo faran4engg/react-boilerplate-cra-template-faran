@@ -104,7 +104,9 @@
       "<rootDir>/src/assets",
       "<rootDir>/src/app/router",
       "async.tsx",
-      "queries.tsx"
+      "queries.tsx",
+      "test-utils.tsx",
+      "LayoutContainer.tsx"
     ],
     "coverageReporters": [
       "json",

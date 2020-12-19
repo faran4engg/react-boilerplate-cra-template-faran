@@ -10,11 +10,11 @@ exports[`<Header /> should render and match the snapshot 1`] = `
     <button
       aria-label="Menu"
       className="p-1 mr-5 -ml-1 rounded-md lg:hidden focus:outline-none focus:shadow-outline-green-200"
+      onClick={[Function]}
     >
       <ForwardRef(SvgMenu)
         aria-hidden="true"
         className="w-6 h-6"
-        onClick={[Function]}
       />
     </button>
     <div
@@ -63,11 +63,11 @@ exports[`<Header /> toggleDark should set dark mode when clicked 1`] = `
     <button
       aria-label="Menu"
       className="p-1 mr-5 -ml-1 rounded-md lg:hidden focus:outline-none focus:shadow-outline-green-200"
+      onClick={[Function]}
     >
       <svg
         aria-hidden="true"
         className="w-6 h-6"
-        onClick={[Function]}
       >
         menu.svg
       </svg>
@@ -120,11 +120,11 @@ exports[`<Header /> toggleDark should set light mode when clicked 1`] = `
     <button
       aria-label="Menu"
       className="p-1 mr-5 -ml-1 rounded-md lg:hidden focus:outline-none focus:shadow-outline-green-200"
+      onClick={[Function]}
     >
       <svg
         aria-hidden="true"
         className="w-6 h-6"
-        onClick={[Function]}
       >
         menu.svg
       </svg>

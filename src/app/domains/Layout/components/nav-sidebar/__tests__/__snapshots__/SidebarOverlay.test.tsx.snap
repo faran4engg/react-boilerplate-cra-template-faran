@@ -1,5 +1,21 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`<SidebarOverlay  /> should close sidebar when clicked 1`] = `
+[MockFunction] {
+  "calls": Array [
+    Array [
+      false,
+    ],
+  ],
+  "results": Array [
+    Object {
+      "type": "return",
+      "value": undefined,
+    },
+  ],
+}
+`;
+
 exports[`<SidebarOverlay  /> should render and match the snapshot when side is closed 1`] = `
 <div
   className="fixed inset-0 z-20 block transition-opacity bg-black opacity-50 lg:hidden hidden"

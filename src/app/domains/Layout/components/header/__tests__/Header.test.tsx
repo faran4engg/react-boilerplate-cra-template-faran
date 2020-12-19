@@ -65,4 +65,21 @@ describe('<Header />', () => {
       expect(component).toMatchSnapshot();
     });
   });
+
+  describe('MenuIcon', () => {
+    const renderComponent = () =>
+      create(<Header handleIsSidebarOpen={handleIsSidebarOpenMock} />);
+
+    it('should open side bar', () => {
+      const component = renderComponent();
+      const root = component.root;
+      const MenuEl = root.findAllByType('button')[0];
+      act(() => {
+        MenuEl.props.onClick();
+      });
+
+      expect(handleIsSidebarOpenMock).toHaveBeenCalledTimes(1);
+      expect(handleIsSidebarOpenMock).toHaveBeenCalledWith(true);
+    });
+  });
 });
