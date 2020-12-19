@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<TodosContainer /> should render and match the snapshot 1`] = `
+<div
+  className="text-gray-600 dark:text-gray-400"
+>
+  <div />
+</div>
+`;

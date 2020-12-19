@@ -14,8 +14,28 @@ exports[`<HomePage /> should render and match the snapshot 1`] = `
       name="description"
     />
   </Helmet>
-  <span>
-    HomePage container
-  </span>
+  <mockConstructor>
+    [Function]
+  </mockConstructor>
+</React.Fragment>
+`;
+
+exports[`<HomePage /> should render with render prop 1`] = `
+<React.Fragment>
+  <Helmet
+    defer={true}
+    encodeSpecialCharacters={true}
+  >
+    <title>
+      Home Page
+    </title>
+    <meta
+      content="A Boilerplate application homepage"
+      name="description"
+    />
+  </Helmet>
+  <mockConstructor>
+    [Function]
+  </mockConstructor>
 </React.Fragment>
 `;

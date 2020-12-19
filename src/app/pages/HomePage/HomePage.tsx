@@ -1,6 +1,6 @@
 import { Helmet } from 'react-helmet-async';
 import { TodoCard } from 'app/domains/Todos/components/todo-card';
-import { TodosContainer } from 'app/domains/Todos/containers';
+import TodosContainer from 'app/domains/Todos/containers';
 
 const HomePage = () => {
   return (
