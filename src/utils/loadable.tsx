@@ -1,3 +1,4 @@
+import { SuspenseLoader } from 'app/domains/Common/components/loader';
 import React, { lazy, Suspense } from 'react';
 
 interface Opts {
@@ -13,7 +14,7 @@ export const lazyLoad = <
 >(
   importFunc: () => T,
   selectorFunc?: (s: Unpromisify<T>) => U,
-  opts: Opts = { fallback: null },
+  opts: Opts = { fallback: <SuspenseLoader /> },
 ) => {
   let lazyFactory: () => Promise<{ default: U }> = importFunc;
 

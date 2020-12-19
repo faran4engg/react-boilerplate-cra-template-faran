@@ -3,7 +3,7 @@ import todosInstance from 'app/axios/todos-instance';
 
 import { TodosAPI } from './types';
 
-const getAllTodos = (): Promise<AxiosResponse<TodosAPI[]>> =>
-  todosInstance.get('/todos');
+const getAllTodos = async (): Promise<AxiosResponse<TodosAPI[]>> =>
+  await todosInstance.get('/todos');
 
 export { getAllTodos };

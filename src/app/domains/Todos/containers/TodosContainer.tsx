@@ -1,28 +1,22 @@
-import { useEffect, useCallback, FC } from 'react';
+import { FC } from 'react';
 
-import { getAllTodos } from 'app/apis/calls';
+import { getAllTodos } from './queries';
 
 import { OwnProps, RenderProps } from './types';
+import { useQuery } from 'react-query';
 
 const TodosContainer: FC<OwnProps & RenderProps> = ({ children }) => {
-  const getTodos = useCallback(async () => {
-    try {
-      const { data } = await getAllTodos();
-      console.log({ data });
-    } catch (error) {}
-  }, []);
+  const { isLoading, error, data } = useQuery('todos', getAllTodos, {
+    refetchOnWindowFocus: false,
+  });
 
-  useEffect(() => {
-    const timeoutID = setTimeout(() => {
-      getTodos(); // simulating delay jsut to show loaders :)
-    }, 2000);
-    return () => {
-      clearTimeout(timeoutID);
-    };
-  }, [getTodos]);
+  if (isLoading) return <h1>Loading...'</h1>;
+
+  if (error) return <p>An error has occurred'</p>;
 
   return (
     <div className="text-gray-600 dark:text-gray-400">
+      {console.log(data)}
       {children({
         isLoading: false,
         todos: [],

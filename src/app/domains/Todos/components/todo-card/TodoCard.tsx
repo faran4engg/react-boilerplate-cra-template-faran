@@ -2,11 +2,11 @@
 const TodoCard = ({ isLoading, todos }) => (
   <>
     <h1 className="text-6xl">Heading 1</h1>
-    <h2 className="text-5xl">Heading 1</h2>
-    <h3 className="text-4xl">Heading 1</h3>
-    <h4 className="text-3xl">Heading 1</h4>
-    <h5 className="text-2xl">Heading 1</h5>
-    <h6 className="">Heading 1</h6>
+    <h2 className="text-5xl">Heading 2</h2>
+    <h3 className="text-4xl">Heading 3</h3>
+    <h4 className="text-3xl">Heading 4</h4>
+    <h5 className="text-2xl">Heading 5</h5>
+    <h6 className="">Heading 6 </h6>
     <p>
       Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil velit esse
       unde repudiandae exercitationem impedit nostrum obcaecati blanditiis

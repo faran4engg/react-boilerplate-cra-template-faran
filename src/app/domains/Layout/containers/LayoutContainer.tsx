@@ -27,24 +27,22 @@ const LayoutContainer: FC = () => {
         <Header handleIsSidebarOpen={setIsSidebarOpen} />
 
         <Content>
-          <Suspense fallback={<SuspenseLoader />}>
-            <Switch>
-              {routes.map(route =>
-                route.component ? (
-                  <Route
-                    key={route.path}
-                    exact={true}
-                    path={`${route.path}`}
-                    // eslint-disable-next-line @typescript-eslint/no-explicit-any
-                    component={(props: any) => <route.component {...props} />}
-                  />
-                ) : null,
-              )}
-              <Redirect exact from="/" to="/home" />
+          <Switch>
+            {routes.map(route =>
+              route.component ? (
+                <Route
+                  key={route.path}
+                  exact={true}
+                  path={`${route.path}`}
+                  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+                  render={(props: any) => <route.component {...props} />}
+                />
+              ) : null,
+            )}
+            <Redirect exact from="/" to="/home" />
 
-              <Route component={NotFoundPage} />
-            </Switch>
-          </Suspense>
+            <Route component={NotFoundPage} />
+          </Switch>
         </Content>
       </div>
     </div>
