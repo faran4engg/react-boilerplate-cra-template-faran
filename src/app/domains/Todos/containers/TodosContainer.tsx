@@ -1,4 +1,4 @@
-import { FC } from 'react';
+import { FC, memo } from 'react';
 
 import { getAllTodos } from './queries';
 
@@ -8,6 +8,7 @@ import { useQuery } from 'react-query';
 const TodosContainer: FC<OwnProps & RenderProps> = ({ children }) => {
   const { isLoading, error, data } = useQuery('todos', getAllTodos, {
     refetchOnWindowFocus: false,
+    suspense: true,
   });
 
   if (isLoading) return <h1>Loading...'</h1>;
@@ -24,4 +25,4 @@ const TodosContainer: FC<OwnProps & RenderProps> = ({ children }) => {
   );
 };
 
-export default TodosContainer;
+export default memo(TodosContainer);
