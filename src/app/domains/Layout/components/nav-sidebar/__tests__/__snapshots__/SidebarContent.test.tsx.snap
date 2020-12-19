@@ -11,15 +11,14 @@ exports[`<SidebarContent /> should render and match the snapshot 1`] = `
     Brand Logo
   </a>
   <ul
-    className="mt-6"
+    className="mt-6 text-theme-color"
   >
     <li
       className="relative px-6 py-3"
     >
       <NavLink
-        activeClassName="text-purple-500 dark:text-purple-400"
-        className="inline-flex items-center w-full text-sm font-semibold transition-colors
- duration-150 hover:text-purple-400 dark:hover:text-purple-300"
+        activeClassName="text-theme-color"
+        className="inline-flex items-center w-full text-sm font-semibold transition-colors duration-150 hover:text-green-200"
         exact={true}
         to="/home"
       >
@@ -29,7 +28,7 @@ exports[`<SidebarContent /> should render and match the snapshot 1`] = `
         >
           <span
             aria-hidden="true"
-            className="absolute inset-y-0 left-0 w-1 bg-purple-600 rounded-tr-lg rounded-br-lg"
+            className="absolute inset-y-0 left-0 w-1 bg-theme-color rounded-tr-lg rounded-br-lg"
           />
         </Route>
         <ForwardRef(SvgHome)
@@ -47,9 +46,8 @@ exports[`<SidebarContent /> should render and match the snapshot 1`] = `
       className="relative px-6 py-3"
     >
       <NavLink
-        activeClassName="text-purple-500 dark:text-purple-400"
-        className="inline-flex items-center w-full text-sm font-semibold transition-colors
- duration-150 hover:text-purple-400 dark:hover:text-purple-300"
+        activeClassName="text-theme-color"
+        className="inline-flex items-center w-full text-sm font-semibold transition-colors duration-150 hover:text-green-200"
         exact={true}
         to="/chat"
       >
@@ -59,7 +57,7 @@ exports[`<SidebarContent /> should render and match the snapshot 1`] = `
         >
           <span
             aria-hidden="true"
-            className="absolute inset-y-0 left-0 w-1 bg-purple-600 rounded-tr-lg rounded-br-lg"
+            className="absolute inset-y-0 left-0 w-1 bg-theme-color rounded-tr-lg rounded-br-lg"
           />
         </Route>
         <ForwardRef(SvgHome)

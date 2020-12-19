@@ -2,14 +2,14 @@
 
 exports[`<Header /> should render and match the snapshot 1`] = `
 <header
-  className="z-40 py-2 lg:p-4 lg:shadow-none shadow-md shadow-bottom bg-white dark:bg-gray-800"
+  className="z-40 py-2 lg:p-4 lg:shadow-none shadow-md shadow-bottom bg-light-mode dark:bg-dark-mode"
 >
   <div
-    className="container flex items-center justify-between h-full  px-6 mx-auto text-purple-600 dark:text-purple-300"
+    className="container flex items-center justify-between h-full  px-6 mx-auto text-theme-color"
   >
     <button
       aria-label="Menu"
-      className="p-1 mr-5 -ml-1 rounded-md lg:hidden focus:outline-none focus:shadow-outline-purple"
+      className="p-1 mr-5 -ml-1 rounded-md lg:hidden focus:outline-none focus:shadow-outline-green-200"
     >
       <ForwardRef(SvgMenu)
         aria-hidden="true"
@@ -21,7 +21,7 @@ exports[`<Header /> should render and match the snapshot 1`] = `
       className="flex justify-center flex-1 lg:mr-32"
     >
       <div
-        className="relative w-full max-w-xl mr-6 focus-within:text-purple-500"
+        className="relative w-full max-w-xl mr-6 focus-within:text-theme-500"
       >
          
       </div>
@@ -30,12 +30,12 @@ exports[`<Header /> should render and match the snapshot 1`] = `
       className="flex items-center flex-shrink-0 space-x-6"
     >
       <li
-        className="relative"
+        className="relative text-theme-color"
       >
         <button
           aria-haspopup="true"
           aria-label="Notifications"
-          className="relative align-middle rounded-md focus:outline-none focus:shadow-outline-purple"
+          className="relative align-middle rounded-md focus:outline-none"
           onClick={[Function]}
         >
           <ForwardRef(SvgMoon)
@@ -55,14 +55,14 @@ exports[`<Header /> should render and match the snapshot 1`] = `
 
 exports[`<Header /> toggleDark should set dark mode when clicked 1`] = `
 <header
-  className="z-40 py-2 lg:p-4 lg:shadow-none shadow-md shadow-bottom bg-white dark:bg-gray-800"
+  className="z-40 py-2 lg:p-4 lg:shadow-none shadow-md shadow-bottom bg-light-mode dark:bg-dark-mode"
 >
   <div
-    className="container flex items-center justify-between h-full  px-6 mx-auto text-purple-600 dark:text-purple-300"
+    className="container flex items-center justify-between h-full  px-6 mx-auto text-theme-color"
   >
     <button
       aria-label="Menu"
-      className="p-1 mr-5 -ml-1 rounded-md lg:hidden focus:outline-none focus:shadow-outline-purple"
+      className="p-1 mr-5 -ml-1 rounded-md lg:hidden focus:outline-none focus:shadow-outline-green-200"
     >
       <svg
         aria-hidden="true"
@@ -76,7 +76,7 @@ exports[`<Header /> toggleDark should set dark mode when clicked 1`] = `
       className="flex justify-center flex-1 lg:mr-32"
     >
       <div
-        className="relative w-full max-w-xl mr-6 focus-within:text-purple-500"
+        className="relative w-full max-w-xl mr-6 focus-within:text-theme-500"
       >
          
       </div>
@@ -85,12 +85,12 @@ exports[`<Header /> toggleDark should set dark mode when clicked 1`] = `
       className="flex items-center flex-shrink-0 space-x-6"
     >
       <li
-        className="relative"
+        className="relative text-theme-color"
       >
         <button
           aria-haspopup="true"
           aria-label="Notifications"
-          className="relative align-middle rounded-md focus:outline-none focus:shadow-outline-purple"
+          className="relative align-middle rounded-md focus:outline-none"
           onClick={[Function]}
         >
           <svg
@@ -112,14 +112,14 @@ exports[`<Header /> toggleDark should set dark mode when clicked 1`] = `
 
 exports[`<Header /> toggleDark should set light mode when clicked 1`] = `
 <header
-  className="z-40 py-2 lg:p-4 lg:shadow-none shadow-md shadow-bottom bg-white dark:bg-gray-800"
+  className="z-40 py-2 lg:p-4 lg:shadow-none shadow-md shadow-bottom bg-light-mode dark:bg-dark-mode"
 >
   <div
-    className="container flex items-center justify-between h-full  px-6 mx-auto text-purple-600 dark:text-purple-300"
+    className="container flex items-center justify-between h-full  px-6 mx-auto text-theme-color"
   >
     <button
       aria-label="Menu"
-      className="p-1 mr-5 -ml-1 rounded-md lg:hidden focus:outline-none focus:shadow-outline-purple"
+      className="p-1 mr-5 -ml-1 rounded-md lg:hidden focus:outline-none focus:shadow-outline-green-200"
     >
       <svg
         aria-hidden="true"
@@ -133,7 +133,7 @@ exports[`<Header /> toggleDark should set light mode when clicked 1`] = `
       className="flex justify-center flex-1 lg:mr-32"
     >
       <div
-        className="relative w-full max-w-xl mr-6 focus-within:text-purple-500"
+        className="relative w-full max-w-xl mr-6 focus-within:text-theme-500"
       >
          
       </div>
@@ -142,12 +142,12 @@ exports[`<Header /> toggleDark should set light mode when clicked 1`] = `
       className="flex items-center flex-shrink-0 space-x-6"
     >
       <li
-        className="relative"
+        className="relative text-theme-color"
       >
         <button
           aria-haspopup="true"
           aria-label="Notifications"
-          className="relative align-middle rounded-md focus:outline-none focus:shadow-outline-purple"
+          className="relative align-middle rounded-md focus:outline-none"
           onClick={[Function]}
         >
           <svg

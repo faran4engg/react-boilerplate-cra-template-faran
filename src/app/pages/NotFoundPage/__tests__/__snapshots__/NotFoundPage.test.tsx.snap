@@ -19,7 +19,7 @@ exports[`<NotFoundPage /> should render and match the snapshot 1`] = `
   >
     <ForwardRef(SvgForbidden)
       aria-hidden="true"
-      className="w-12 h-12 mt-8 text-purple-600"
+      className="w-12 h-12 mt-8 text-theme-color"
     />
     <h1
       className="text-6xl font-semibold text-gray-700 dark:text-gray-200"
@@ -32,7 +32,7 @@ exports[`<NotFoundPage /> should render and match the snapshot 1`] = `
       Page not found. Check the address or
     </p>
     <Link
-      className="animate-bounce text-purple-600 hover:underline dark:text-purple-300"
+      className="animate-bounce text-theme-color hover:underline"
       to="/"
     >
       Go to Home page
