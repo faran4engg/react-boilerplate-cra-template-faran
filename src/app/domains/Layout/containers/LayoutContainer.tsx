@@ -15,7 +15,7 @@ const LayoutContainer: FC = () => {
 
   return (
     <div
-      className={`flex h-screen bg-gray-50 dark:bg-gray-900 text-gray-500 dark:text-gray-200
+      className={`flex h-screen bg-light-mode-content-bg dark:bg-dark-mode-content-bg text-gray-500 dark:text-gray-200
       }`}
     >
       <NavSidebar

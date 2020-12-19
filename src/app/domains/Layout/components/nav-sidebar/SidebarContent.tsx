@@ -8,19 +8,19 @@ const SidebarContent: FC = () => (
     <a className="ml-6 text-lg font-bold" href="/">
       Brand Logo
     </a>
-    <ul className="mt-6">
+    <ul className="mt-6 text-theme-color">
       {routes.map(route => (
         <li className="relative px-6 py-3" key={route.name}>
           <NavLink
             exact
             to={route.path}
             className="inline-flex items-center w-full text-sm font-semibold transition-colors
-						 duration-150 hover:text-purple-400 dark:hover:text-purple-300"
-            activeClassName="text-purple-500 dark:text-purple-400"
+						 duration-150 hover:text-green-200"
+            activeClassName="text-theme-color"
           >
             <Route path={route.path} exact={route.exact}>
               <span
-                className="absolute inset-y-0 left-0 w-1 bg-purple-600 rounded-tr-lg rounded-br-lg"
+                className="absolute inset-y-0 left-0 w-1 bg-theme-color rounded-tr-lg rounded-br-lg"
                 aria-hidden="true"
               />
             </Route>

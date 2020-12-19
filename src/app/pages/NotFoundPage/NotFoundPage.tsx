@@ -11,7 +11,7 @@ const NotFoundPage = () => (
     </Helmet>
     <div className="flex flex-col items-center">
       <ForbiddenIcon
-        className="w-12 h-12 mt-8 text-purple-600"
+        className="w-12 h-12 mt-8 text-theme-color"
         aria-hidden="true"
       />
       <h1 className="text-6xl font-semibold text-gray-700 dark:text-gray-200">
@@ -21,10 +21,7 @@ const NotFoundPage = () => (
         Page not found. Check the address or
       </p>
 
-      <Link
-        className="animate-bounce text-purple-600 hover:underline dark:text-purple-300"
-        to="/"
-      >
+      <Link className="animate-bounce text-theme-color hover:underline" to="/">
         Go to Home page
       </Link>
     </div>

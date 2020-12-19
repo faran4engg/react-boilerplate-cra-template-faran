@@ -22,15 +22,15 @@ const Header: FC<HeaderProps> = ({ handleIsSidebarOpen }) => {
   return (
     <header
       className="z-40 py-2 lg:p-4 lg:shadow-none shadow-md shadow-bottom
-		 bg-white dark:bg-gray-800"
+		 bg-light-mode dark:bg-dark-mode"
     >
       <div
         className="container flex items-center justify-between h-full 
-			px-6 mx-auto text-purple-600 dark:text-purple-300"
+			px-6 mx-auto text-theme-color"
       >
         {/* <!-- Mobile hamburger --> */}
         <button
-          className="p-1 mr-5 -ml-1 rounded-md lg:hidden focus:outline-none focus:shadow-outline-purple"
+          className="p-1 mr-5 -ml-1 rounded-md lg:hidden focus:outline-none focus:shadow-outline-green-200"
           aria-label="Menu"
         >
           <MenuIcon
@@ -41,16 +41,16 @@ const Header: FC<HeaderProps> = ({ handleIsSidebarOpen }) => {
         </button>
         {/* <!-- Search input --> */}
         <div className="flex justify-center flex-1 lg:mr-32">
-          <div className="relative w-full max-w-xl mr-6 focus-within:text-purple-500">
+          <div className="relative w-full max-w-xl mr-6 focus-within:text-theme-500">
             &nbsp;
           </div>
         </div>
         <ul className="flex items-center flex-shrink-0 space-x-6">
           {/* <!-- Theme toggler --> */}
-          <li className="relative">
+          <li className="relative text-theme-color">
             <button
               onClick={toggleDark}
-              className="relative align-middle rounded-md focus:outline-none focus:shadow-outline-purple"
+              className="relative align-middle rounded-md focus:outline-none"
               aria-label="Notifications"
               aria-haspopup="true"
             >
