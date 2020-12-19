@@ -16,10 +16,9 @@ const TodosContainer: FC<OwnProps & RenderProps> = ({ children }) => {
 
   return (
     <div className="text-gray-600 dark:text-gray-400">
-      {console.log(data)}
       {children({
         isLoading: false,
-        todos: [],
+        todos: data,
       })}
     </div>
   );

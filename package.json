@@ -103,7 +103,8 @@
       "<rootDir>/src/app/axios",
       "<rootDir>/src/assets",
       "<rootDir>/src/app/router",
-      "async.tsx"
+      "async.tsx",
+      "queries.tsx"
     ],
     "coverageReporters": [
       "json",

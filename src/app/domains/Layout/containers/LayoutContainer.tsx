@@ -1,7 +1,7 @@
-import { Suspense, useState, FC, useEffect } from 'react';
+import { useState, FC, useEffect } from 'react';
 import { Switch, Route, Redirect } from 'react-router-dom';
 import routes from 'app/router/routes';
-import { SuspenseLoader } from 'app/domains/Common/components/loader';
+
 import { NavSidebar, Content, Header } from 'app/domains/Layout/components';
 import { NotFoundPage } from 'app/pages/NotFoundPage/async';
 

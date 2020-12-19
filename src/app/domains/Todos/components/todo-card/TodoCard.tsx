@@ -1,5 +1,11 @@
-// @ts-nocheck
-const TodoCard = ({ isLoading, todos }) => (
+import { FC } from 'react';
+import { TodosAPI } from 'app/domains/Todos/containers/types';
+
+interface TodoCardProps {
+  isLoading: boolean;
+  todos?: TodosAPI[];
+}
+const TodoCard: FC<TodoCardProps> = ({ isLoading, todos }) => (
   <>
     <h1 className="text-6xl">Heading 1</h1>
     <h2 className="text-5xl">Heading 2</h2>
@@ -100,20 +106,7 @@ const TodoCard = ({ isLoading, todos }) => (
       omnis neque quibusdam voluptatem odit nulla? Illum assumenda quaerat
       facere! Quia, ab ut tempore debitis delectus, architecto dolor eaque
       libero eius quaerat impedit. Pariatur quae accusantium velit distinctio
-      numquam laborum quibusdam ipsum. Pariatur ab ipsum reprehenderit dicta
-      est, blanditiis possimus deserunt laboriosam placeat a, illo deleniti
-      commodi expedita, cum et labore? Odit magnam aperiam, labore accusantium
-      soluta et fugit maiores aut neque quos non? Rem illo totam deleniti
-      exercitationem pariatur vel, aperiam, unde aut inventore adipisci
-      repudiandae quos dicta minus voluptatum dolorem itaque fugit. Facere
-      nulla, atque, tempora nobis amet ipsa eaque quia molestias odio fugiat
-      molestiae officia officiis! Quas, minus consequuntur? Vero ullam sequi
-      veniam, consequuntur quis voluptas laudantium eveniet quod repellat saepe
-      aliquid, rerum, molestias totam repellendus omnis nihil ipsum quae quasi
-      unde tempore hic a in optio. Dicta, iste placeat unde itaque deleniti
-      eligendi eius quisquam, quis sapiente, numquam veritatis obcaecati
-      consequatur incidunt at sed ab expedita neque. Accusamus nesciunt nisi
-      iste quae, dicta dolores temporibus provident rerum.
+      numquam laborum quibusdam ipsum.
     </p>
   </>
 );

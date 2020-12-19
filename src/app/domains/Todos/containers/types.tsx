@@ -2,7 +2,7 @@ import { ReactNode } from 'react';
 
 interface ChildrenProps {
   isLoading: boolean;
-  todos: [];
+  todos?: TodosAPI[];
 }
 
 export interface OwnProps {}
