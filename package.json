@@ -98,6 +98,8 @@
       "!src/serviceWorker.ts"
     ],
     "coveragePathIgnorePatterns": [
+      "<rootDir>/src/app/api",
+      "<rootDir>/src/app/axios",
       "!src/*.d.ts"
     ],
     "coverageReporters": [
