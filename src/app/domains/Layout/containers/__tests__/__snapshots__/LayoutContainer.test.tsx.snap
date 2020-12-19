@@ -16,30 +16,26 @@ exports[`<LayoutContainer /> should render and match the snapshot 1`] = `
       handleIsSidebarOpen={[Function]}
     />
     <Content>
-      <React.Suspense
-        fallback={<SuspenseLoader />}
-      >
-        <Switch>
-          <Route
-            component={[Function]}
-            exact={true}
-            path="/home"
-          />
-          <Route
-            component={[Function]}
-            exact={true}
-            path="/404"
-          />
-          <Redirect
-            exact={true}
-            from="/"
-            to="/home"
-          />
-          <Route
-            component={[Function]}
-          />
-        </Switch>
-      </React.Suspense>
+      <Switch>
+        <Route
+          exact={true}
+          path="/home"
+          render={[Function]}
+        />
+        <Route
+          exact={true}
+          path="/404"
+          render={[Function]}
+        />
+        <Redirect
+          exact={true}
+          from="/"
+          to="/home"
+        />
+        <Route
+          component={[Function]}
+        />
+      </Switch>
     </Content>
   </div>
 </div>

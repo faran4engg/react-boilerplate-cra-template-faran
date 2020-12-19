@@ -12,6 +12,22 @@ exports[`loadable should render fallback if given one 1`] = `
 </div>
 `;
 
-exports[`loadable should render null by default 1`] = `null`;
+exports[`loadable should render null by default 1`] = `
+<div
+  id="preloader"
+>
+  <div
+    id="loader"
+  />
+</div>
+`;
 
-exports[`loadable should render null by default with empty options 1`] = `null`;
+exports[`loadable should render null by default with empty options 1`] = `
+<div
+  id="preloader"
+>
+  <div
+    id="loader"
+  />
+</div>
+`;
