@@ -5,7 +5,7 @@ exports[`<Header /> should render and match the snapshot 1`] = `
   className="z-40 py-2 lg:p-4 lg:shadow-none shadow-md shadow-bottom bg-light-mode dark:bg-dark-mode"
 >
   <div
-    className="container flex items-center justify-between h-full  px-6 mx-auto text-theme-color"
+    className="container flex items-center justify-between h-full  px-6 mx-auto text-theme-color-light dark:text-theme-color-dark"
   >
     <button
       aria-label="Menu"
@@ -30,7 +30,7 @@ exports[`<Header /> should render and match the snapshot 1`] = `
       className="flex items-center flex-shrink-0 space-x-6"
     >
       <li
-        className="relative text-theme-color"
+        className="relative text-theme-color-light dark:text-theme-color-dark"
       >
         <button
           aria-haspopup="true"
@@ -58,7 +58,7 @@ exports[`<Header /> toggleDark should set dark mode when clicked 1`] = `
   className="z-40 py-2 lg:p-4 lg:shadow-none shadow-md shadow-bottom bg-light-mode dark:bg-dark-mode"
 >
   <div
-    className="container flex items-center justify-between h-full  px-6 mx-auto text-theme-color"
+    className="container flex items-center justify-between h-full  px-6 mx-auto text-theme-color-light dark:text-theme-color-dark"
   >
     <button
       aria-label="Menu"
@@ -85,7 +85,7 @@ exports[`<Header /> toggleDark should set dark mode when clicked 1`] = `
       className="flex items-center flex-shrink-0 space-x-6"
     >
       <li
-        className="relative text-theme-color"
+        className="relative text-theme-color-light dark:text-theme-color-dark"
       >
         <button
           aria-haspopup="true"
@@ -115,7 +115,7 @@ exports[`<Header /> toggleDark should set light mode when clicked 1`] = `
   className="z-40 py-2 lg:p-4 lg:shadow-none shadow-md shadow-bottom bg-light-mode dark:bg-dark-mode"
 >
   <div
-    className="container flex items-center justify-between h-full  px-6 mx-auto text-theme-color"
+    className="container flex items-center justify-between h-full  px-6 mx-auto text-theme-color-light dark:text-theme-color-dark"
   >
     <button
       aria-label="Menu"
@@ -142,7 +142,7 @@ exports[`<Header /> toggleDark should set light mode when clicked 1`] = `
       className="flex items-center flex-shrink-0 space-x-6"
     >
       <li
-        className="relative text-theme-color"
+        className="relative text-theme-color-light dark:text-theme-color-dark"
       >
         <button
           aria-haspopup="true"

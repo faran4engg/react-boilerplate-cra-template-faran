@@ -26,7 +26,7 @@ const Header: FC<HeaderProps> = ({ handleIsSidebarOpen }) => {
     >
       <div
         className="container flex items-center justify-between h-full 
-			px-6 mx-auto text-theme-color"
+			px-6 mx-auto text-theme-color-light dark:text-theme-color-dark"
       >
         {/* <!-- Mobile hamburger --> */}
         <button
@@ -44,7 +44,7 @@ const Header: FC<HeaderProps> = ({ handleIsSidebarOpen }) => {
         </div>
         <ul className="flex items-center flex-shrink-0 space-x-6">
           {/* <!-- Theme toggler --> */}
-          <li className="relative text-theme-color">
+          <li className="relative text-theme-color-light dark:text-theme-color-dark">
             <button
               onClick={toggleDark}
               className="relative align-middle rounded-md focus:outline-none"
