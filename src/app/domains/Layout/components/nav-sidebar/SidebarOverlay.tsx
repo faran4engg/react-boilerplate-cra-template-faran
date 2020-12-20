@@ -1,15 +1,20 @@
 import { FC } from 'react';
 import { SidebarOverlayProps } from './types';
 
+const cls = {
+  overlay: isSidebarOpen =>
+    `fixed inset-0 z-20 block bg-black lg:hidden transition-opacity opacity-50 ${
+      isSidebarOpen ? 'block' : 'hidden'
+    } `,
+};
+
 const SidebarOverlay: FC<SidebarOverlayProps> = ({
   isSidebarOpen,
   handleIsSidebarOpen,
 }) => (
   <div
     onClick={() => handleIsSidebarOpen(false)}
-    className={`fixed inset-0 z-20 block transition-opacity bg-black opacity-50 lg:hidden ${
-      isSidebarOpen ? 'block' : 'hidden'
-    }`}
+    className={cls.overlay(isSidebarOpen)}
   />
 );
 

@@ -5,6 +5,12 @@ import routes from 'app/router/routes';
 import { NavSidebar, Content, Header } from 'app/domains/Layout/components';
 import { NotFoundPage } from 'app/pages/NotFoundPage/async';
 
+const cls = {
+  layout:
+    'flex h-screen bg-light-mode-content-bg dark:bg-dark-mode-content-bg text-gray-500 dark:text-gray-200',
+  mainWrapper: 'flex flex-col flex-1 w-full',
+};
+
 const LayoutContainer: FC = () => {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
 
@@ -14,16 +20,13 @@ const LayoutContainer: FC = () => {
   }, []);
 
   return (
-    <div
-      className={`flex h-screen bg-light-mode-content-bg dark:bg-dark-mode-content-bg text-gray-500 dark:text-gray-200
-      }`}
-    >
+    <div className={cls.layout}>
       <NavSidebar
         isSidebarOpen={isSidebarOpen}
         handleIsSidebarOpen={setIsSidebarOpen}
       />
 
-      <div className="flex flex-col flex-1 w-full">
+      <div className={cls.mainWrapper}>
         <Header handleIsSidebarOpen={setIsSidebarOpen} />
 
         <Content>

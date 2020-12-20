@@ -54,7 +54,6 @@
     "eslint": "eslint --ext js,ts,tsx",
     "lint": "npm run eslint src",
     "lint:fix": "npm run eslint --fix src",
-    "prettify": "prettier --write",
     "__comment2__start__": "build-script",
     "build": "run-s build:** -l",
     "build:a:tw": "cross-env NODE_ENV=production npm run start:tw",
