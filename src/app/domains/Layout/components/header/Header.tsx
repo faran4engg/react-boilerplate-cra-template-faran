@@ -28,6 +28,8 @@ const Header: FC<HeaderProps> = ({ handleIsSidebarOpen }) => {
         className="container flex items-center justify-between h-full 
 			px-6 mx-auto text-theme-color-light dark:text-theme-color-dark"
       >
+        {/* Brand Name */}
+        <h2 className="hidden lg:block">Brand Name</h2>
         {/* <!-- Mobile hamburger --> */}
         <button
           onClick={() => handleIsSidebarOpen(true)}

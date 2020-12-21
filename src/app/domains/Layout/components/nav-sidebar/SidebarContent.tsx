@@ -1,14 +1,16 @@
 import { FC } from 'react';
 import { NavLink, Route } from 'react-router-dom';
-import { HomeIcon } from 'assets/icons';
+import { HomeIcon, StoryTellingIcon } from 'assets/icons';
 import routes from 'app/router/sidebar';
 
 const SidebarContent: FC = () => (
-  <div className="py-4 text-gray-500 dark:text-gray-200">
-    <a className="ml-6 text-lg font-bold" href="/">
-      Brand Logo
-    </a>
-    <ul className="mt-6 text-theme-color-light dark:text-theme-color-dark">
+  <div className="py-4 lg: pt-0 text-gray-500 dark:text-gray-200">
+    <ul className="mt-12 lg:mt-0 text-theme-color-light dark:text-theme-color-dark">
+      <li className="relative px-6 py-3">
+        <a className="text-lg font-bold" href="/">
+          <StoryTellingIcon className="mx-auto w-12 h-12" aria-hidden="true" />
+        </a>
+      </li>
       {routes.map(route => (
         <li className="relative px-6 py-3" key={route.name}>
           <NavLink

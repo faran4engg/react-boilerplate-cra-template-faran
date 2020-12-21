@@ -2,17 +2,24 @@
 
 exports[`<SidebarContent /> should render and match the snapshot 1`] = `
 <div
-  className="py-4 text-gray-500 dark:text-gray-200"
+  className="py-4 lg: pt-0 text-gray-500 dark:text-gray-200"
 >
-  <a
-    className="ml-6 text-lg font-bold"
-    href="/"
-  >
-    Brand Logo
-  </a>
   <ul
-    className="mt-6 text-theme-color-light dark:text-theme-color-dark"
+    className="mt-12 lg:mt-0 text-theme-color-light dark:text-theme-color-dark"
   >
+    <li
+      className="relative px-6 py-3"
+    >
+      <a
+        className="text-lg font-bold"
+        href="/"
+      >
+        <ForwardRef(SvgStorytelling)
+          aria-hidden="true"
+          className="mx-auto w-12 h-12"
+        />
+      </a>
+    </li>
     <li
       className="relative px-6 py-3"
     >

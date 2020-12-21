@@ -7,6 +7,11 @@ exports[`<Header /> should render and match the snapshot 1`] = `
   <div
     className="container flex items-center justify-between h-full  px-6 mx-auto text-theme-color-light dark:text-theme-color-dark"
   >
+    <h2
+      className="hidden lg:block"
+    >
+      Brand Name
+    </h2>
     <button
       aria-label="Menu"
       className="p-1 mr-5 -ml-1 rounded-md lg:hidden focus:outline-none focus:shadow-outline-green-200"
@@ -60,6 +65,11 @@ exports[`<Header /> toggleDark should set dark mode when clicked 1`] = `
   <div
     className="container flex items-center justify-between h-full  px-6 mx-auto text-theme-color-light dark:text-theme-color-dark"
   >
+    <h2
+      className="hidden lg:block"
+    >
+      Brand Name
+    </h2>
     <button
       aria-label="Menu"
       className="p-1 mr-5 -ml-1 rounded-md lg:hidden focus:outline-none focus:shadow-outline-green-200"
@@ -117,6 +127,11 @@ exports[`<Header /> toggleDark should set light mode when clicked 1`] = `
   <div
     className="container flex items-center justify-between h-full  px-6 mx-auto text-theme-color-light dark:text-theme-color-dark"
   >
+    <h2
+      className="hidden lg:block"
+    >
+      Brand Name
+    </h2>
     <button
       aria-label="Menu"
       className="p-1 mr-5 -ml-1 rounded-md lg:hidden focus:outline-none focus:shadow-outline-green-200"

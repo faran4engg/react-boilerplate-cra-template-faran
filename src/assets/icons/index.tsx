@@ -27,8 +27,18 @@ import { ReactComponent as OutlinePersonIcon } from './outlinePerson.svg';
 import { ReactComponent as OutlineCogIcon } from './outlineCog.svg';
 import { ReactComponent as OutlineLogoutIcon } from './outlineLogout.svg';
 import { ReactComponent as YouTubeIcon } from './youtube.svg';
+import { ReactComponent as StoryTellingIcon } from './storytelling.svg';
+import { ReactComponent as BookReadIcon } from './book-read.svg';
+import { ReactComponent as KaabaIcon } from './kaaba.svg';
+import { ReactComponent as PeaceIcon } from './peace.svg';
+import { ReactComponent as WorldPeaceIcon } from './world-peace.svg';
 
 export {
+  BookReadIcon,
+  KaabaIcon,
+  PeaceIcon,
+  WorldPeaceIcon,
+  StoryTellingIcon,
   ButtonsIcon,
   CardsIcon,
   ChartsIcon,
